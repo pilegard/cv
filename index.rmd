@@ -10,6 +10,16 @@ output:
     css: ['dd_cv.css', 'resume']
     self_contained: true
 ---
+``` {r, echo=FALSE}
+# Get rid off the sidebar from the second page
+# (source:https://www.anabellelaurent.com/slides/rladies_pagedown/cvwithpagedown#18
+# .pagedjs_page:not(:first-of-type) {
+#  --sidebar-width: 0rem;
+#  --sidebar-background-color: #ffffff;
+#  --main-width: calc(var(--content-width) - var(--sidebar-width));
+#  --decorator-horizontal-margin: 0.2in;
+# }
+```
 
 ```{r, include=FALSE}
 knitr::opts_chunk$set(
@@ -85,7 +95,7 @@ Main
 Celeste Pilegard {#title}
 --------------------------------------------------------------------------------
 
- Curriculum Vitae
+&nbsp;Curriculum Vitae
 
 
 Education and Professional Experience {data-icon=institution data-concise=true}
@@ -129,7 +139,6 @@ CV %<>% print_section('conferences')
 Grant Support {data-icon=plus}
 --------------------------------------------------------------------------------
 
-
 ```{r}
 CV %<>% print_section('grants')
 ```
@@ -137,11 +146,58 @@ CV %<>% print_section('grants')
 Teaching {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
-
 ```{r}
 CV %<>% print_section('teaching')
 ```
 
+Mentorship {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('mentor')
+```
+
+Invited Talks, Teaching Talks, and Workshops {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('talks')
+```
+
+Other Professional Experience {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('other_pro')
+```
+
+Professional Service {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('professional_service')
+```
+
+Department and University Service {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('uni_service')
+```
+
+Outreach {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('outreach')
+```
+
+Professional Development {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('profdev')
+```
 
 
 ```{r}
