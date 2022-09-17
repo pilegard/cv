@@ -19,12 +19,12 @@ h3 {
 
 /* unvisited link */
 a:link {
-  color: #11306A;
+  color: #444;
 }
 
 /* visited link */
 a:visited {
-  color: #11306A;
+  color: #444;
 }
 
 /* mouse over link */
@@ -53,7 +53,7 @@ sup {
 }
 
 /* Avoid the breaking within a section */
-.blocks {
+  .blocks {
   break-inside: avoid;
 }
 
@@ -65,7 +65,7 @@ sup {
 
 /* Customize some of the sizing variables */
 :root {
-  --sidebar-width: 10rem; /* Sidebar width  */
+  --sidebar-width: 11rem; /* Sidebar width  */
   --sidebar-background-color: #f7f7f7; /* Sidebar color */
   --sidebar-horizontal-padding: 0.01in; /* Reduce sidebar padding */
   --decorator-outer-dim: 10px; /* Make position deliniating circles larger */

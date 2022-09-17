@@ -97,14 +97,6 @@ Celeste Pilegard {#title}
 &nbsp;Curriculum Vitae
 
 
-Professional Experience {data-icon=institution data-concise=true}
---------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section('prof_experience')
-```
-
-
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
@@ -112,14 +104,12 @@ Education {data-icon=graduation-cap data-concise=true}
 CV %<>% print_section('education')
 ```
 
-
-Awards and Fellowships {data-icon=asterisk}
+Professional Appointments {data-icon=institution data-concise=true}
 --------------------------------------------------------------------------------
 
 ```{r}
-CV %<>% print_section('awards')
+CV %<>% print_section('prof_experience')
 ```
-
 
 Publications {data-icon=book}
 --------------------------------------------------------------------------------
@@ -128,22 +118,26 @@ Publications {data-icon=book}
 CV %<>% print_section('pubs')
 ```
 
-
-Conferences {data-icon=users}
+Awards and Fellowships {data-icon=award}
 --------------------------------------------------------------------------------
 
 ```{r}
-CV %<>% print_section('conferences')
+CV %<>% print_section('awards')
 ```
 
-
-Grant Support {data-icon=asterisk}
+Grant Support {data-icon=project-diagram}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %<>% print_section('grants')
 ```
 
+Conference Activity {data-icon=users}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('conferences')
+```
 
 Teaching {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
@@ -152,33 +146,21 @@ Teaching {data-icon=chalkboard-teacher}
 CV %<>% print_section('teaching')
 ```
 
-
-
-Mentorship {data-icon=asterisk}
+Mentorship {data-icon=user-graduate}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %<>% print_section('mentor')
 ```
 
-
-Invited Talks, Teaching Talks, and Workshops {data-icon=user-circle}
+Invited Talks, Teaching Talks, and Workshops {data-icon=comment-alt}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %<>% print_section('talks')
 ```
 
-
-Other Professional Experience {data-icon=asterisk}
---------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section('other_pro')
-```
-
-
-Professional Service {data-icon=asterisk}
+Professional Service {data-icon=cogs}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -186,7 +168,7 @@ CV %<>% print_section('professional_service')
 ```
 
 
-Department and University Service {data-icon=asterisk}
+Department and University Service {data-icon=cogs}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -201,14 +183,21 @@ Outreach {data-icon=globe}
 CV %<>% print_section('outreach')
 ```
 
+Other Professional Experience {data-icon=briefcase}
+--------------------------------------------------------------------------------
 
-Professional Development {data-icon=asterisk}
+```{r}
+CV %<>% print_section('other_pro')
+```
+
+<!--
+Professional Development {data-icon=chart-line}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %<>% print_section('profdev')
 ```
-
+-->
 
 
 ```{r}
