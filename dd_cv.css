@@ -32,6 +32,20 @@ a:hover {
   color: black;
 }
 
+/*Add page number to the bottom left of the left and right pages */
+@page :left {
+  @bottom-right {
+    font-size: 0.7rem;
+    content: counter(page);
+  }
+}
+@page :right {
+  @bottom-right {
+    font-size: 0.7rem;
+    content: counter(page);
+  }
+}
+
 /* When in PDF export mode make sure superscripts are nice and small and italic */
 sup {
   font-size: 0.45rem;
@@ -51,7 +65,7 @@ sup {
 
 /* Customize some of the sizing variables */
 :root {
-  --sidebar-width: 12rem; /* Shrink sidebar width  */
+  --sidebar-width: 10rem; /* Sidebar width  */
   --sidebar-background-color: #f7f7f7; /* Sidebar color */
   --sidebar-horizontal-padding: 0.01in; /* Reduce sidebar padding */
   --decorator-outer-dim: 10px; /* Make position deliniating circles larger */
@@ -92,16 +106,16 @@ sup {
   content: "• ";
 }
 
-/* Make sure elements in asside are centered and have a nice small text */
+/* Make sure elements in aside are centered and have a nice small text */
 .aside {
   width: calc(var(--sidebar-width) + 9px);
   line-height: 1.2;
   font-size: 0.75rem;
 }
 
-/* Make little circle outline be a light blue */
+/* color of circle marking each entry */
 .decorator::after {
-  background-color: #08306b;
+  background-color: black;
 }
 
 /* Remove the fake bullets from lists */

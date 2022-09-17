@@ -78,7 +78,6 @@ Contact {#contact}
 CV %>% print_contact_info()
 ```
 
-
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
@@ -98,7 +97,15 @@ Celeste Pilegard {#title}
 &nbsp;Curriculum Vitae
 
 
-Education and Professional Experience {data-icon=institution data-concise=true}
+Professional Experience {data-icon=institution data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('prof_experience')
+```
+
+
+Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -106,14 +113,12 @@ CV %<>% print_section('education')
 ```
 
 
-
-Awards and Fellowships {data-icon=star}
+Awards and Fellowships {data-icon=asterisk}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %<>% print_section('awards')
 ```
-
 
 
 Publications {data-icon=book}
@@ -123,25 +128,22 @@ Publications {data-icon=book}
 CV %<>% print_section('pubs')
 ```
 
-<!-- These breaks just force a new page so section doesnt get cut off -->
-<!-- <br> -->
-<!-- <br> -->
-<!-- <br> -->
 
 Conferences {data-icon=users}
 --------------------------------------------------------------------------------
-
 
 ```{r}
 CV %<>% print_section('conferences')
 ```
 
-Grant Support {data-icon=plus}
+
+Grant Support {data-icon=asterisk}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %<>% print_section('grants')
 ```
+
 
 Teaching {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
@@ -150,49 +152,57 @@ Teaching {data-icon=chalkboard-teacher}
 CV %<>% print_section('teaching')
 ```
 
-Mentorship {data-icon=chalkboard-teacher}
+
+
+Mentorship {data-icon=asterisk}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %<>% print_section('mentor')
 ```
 
-Invited Talks, Teaching Talks, and Workshops {data-icon=chalkboard-teacher}
+
+Invited Talks, Teaching Talks, and Workshops {data-icon=user-circle}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %<>% print_section('talks')
 ```
 
-Other Professional Experience {data-icon=chalkboard-teacher}
+
+Other Professional Experience {data-icon=asterisk}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %<>% print_section('other_pro')
 ```
 
-Professional Service {data-icon=chalkboard-teacher}
+
+Professional Service {data-icon=asterisk}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %<>% print_section('professional_service')
 ```
 
-Department and University Service {data-icon=chalkboard-teacher}
+
+Department and University Service {data-icon=asterisk}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %<>% print_section('uni_service')
 ```
 
-Outreach {data-icon=chalkboard-teacher}
+
+Outreach {data-icon=globe}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %<>% print_section('outreach')
 ```
 
-Professional Development {data-icon=chalkboard-teacher}
+
+Professional Development {data-icon=asterisk}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -200,7 +210,7 @@ CV %<>% print_section('profdev')
 ```
 
 
+
 ```{r}
 CV %<>% print_links()
 ```
-
