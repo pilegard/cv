@@ -13,23 +13,23 @@ h1,
 h2,
 h3 {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   color: #000;
 }
 
 /* unvisited link */
 a:link {
-  color: #444;
+  color: #182B49;
 }
 
 /* visited link */
 a:visited {
-  color: #444;
+  color: #182B49;
 }
 
 /* mouse over link */
 a:hover {
-  color: black;
+  color: #444;
 }
 
 /*Add page number to the bottom left of the left and right pages */
@@ -115,7 +115,7 @@ sup {
 
 /* color of circle marking each entry */
 .decorator::after {
-  background-color: black;
+  background-color: #182B49;
 }
 
 /* Remove the fake bullets from lists */
