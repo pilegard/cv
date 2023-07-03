@@ -53,9 +53,9 @@ sup {
 }
 
 /* Avoid the breaking within a section */
-  .blocks {
+/*   .blocks {
   break-inside: avoid;
-}
+} */
 
 * {
   /* Override default right margin for sidebar*/

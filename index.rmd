@@ -118,18 +118,18 @@ Publications {data-icon=book}
 CV %<>% print_section('pubs')
 ```
 
-Awards and Fellowships {data-icon=award}
---------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section('awards')
-```
-
 Grant Support {data-icon=project-diagram}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %<>% print_section('grants')
+```
+
+Awards and Fellowships {data-icon=award}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('awards')
 ```
 
 Conference Activity {data-icon=users}
