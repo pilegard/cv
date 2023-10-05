@@ -10,15 +10,15 @@ output:
     css: ['dd_cv.css', 'resume']
     self_contained: true
 ---
-``` {r, echo=FALSE}
-# Get rid off the sidebar from the second page
-# (source:https://www.anabellelaurent.com/slides/rladies_pagedown/cvwithpagedown#18
-# .pagedjs_page:not(:first-of-type) {
-#  --sidebar-width: 0rem;
-#  --sidebar-background-color: #ffffff;
-#  --main-width: calc(var(--content-width) - var(--sidebar-width));
-#  --decorator-horizontal-margin: 0.2in;
-# }
+``` {css, echo=FALSE}
+/* Get rid off the sidebar from the second page */
+/* (source:https://www.anabellelaurent.com/slides/rladies_pagedown/cvwithpagedown#18 */
+.pagedjs_page:not(:first-of-type) {
+  --sidebar-width: 0rem;
+  --sidebar-background-color: #ffffff;
+  --main-width: 7in;
+  --decorator-horizontal-margin: 0.2in;
+}
 ```
 
 ```{r, include=FALSE}
@@ -78,14 +78,9 @@ Contact {#contact}
 CV %>% print_contact_info()
 ```
 
-Disclaimer {#disclaimer}
---------------------------------------------------------------------------------
+Updated `r Sys.Date()`
 
-Last updated `r Sys.Date()`
-
-Made with [pagedown](https://github.com/rstudio/pagedown)
-
-[github.com/pilegard/cv](https://github.com/pilegard/cv)
+Source: [github.com/pilegard/cv](https://github.com/pilegard/cv)
 
 
 Main

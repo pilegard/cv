@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto:wght@350&500&700+Display&display=swap");
 
 /* Main text*/
 body {
@@ -9,7 +9,9 @@ body {
 }
 
 /* Header font */
-h1,
+h1 {
+  font-weight: 500;
+},
 h2,
 h3 {
   font-family: "Roboto", sans-serif;
@@ -59,17 +61,18 @@ sup {
 
 * {
   /* Override default right margin for sidebar*/
-  --pagedjs-margin-right: 0.2in;
-  --pagedjs-margin-left: 0.2in;
+  --pagedjs-margin-right: .5in;
+  --pagedjs-margin-left: .5in;
 }
 
 /* Customize some of the sizing variables */
 :root {
   --sidebar-width: 11rem; /* Sidebar width  */
-  --sidebar-background-color: #f7f7f7; /* Sidebar color */
-  --sidebar-horizontal-padding: 0.01in; /* Reduce sidebar padding */
+  --sidebar-background-color: #ffffff; /* Sidebar color */
+  --sidebar-horizontal-padding: -.2in; /* Reduce sidebar padding */
   --decorator-outer-dim: 10px; /* Make position deliniating circles larger */
   --decorator-border: 2px solid #cbcfd2; /* Timeline color*/
+  --main-width: 7in; /* Main content width*/
 }
 
 .details .place {
@@ -111,6 +114,7 @@ sup {
   width: calc(var(--sidebar-width) + 9px);
   line-height: 1.2;
   font-size: 0.75rem;
+  margin-top: -.35in; /* Move contact info vertically */
 }
 
 /* color of circle marking each entry */
