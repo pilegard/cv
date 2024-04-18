@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto:wght@350&500&700+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto:wght@300;500;700y&display=swap");
 
 /* Main text*/
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 350;
+  font-weight: 300;
   line-height: 1.3;
   color: #444;
 }
