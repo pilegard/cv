@@ -7,7 +7,7 @@
 
 # Knit the HTML version
 rmarkdown::render("index.rmd",
-                  params = list(pdf_mode = FALSE),
+                  params = list(pdf_mode = true),
                   output_file = "index.html")
 
 # Knit the PDF version to temporary html location
