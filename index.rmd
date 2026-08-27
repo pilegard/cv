@@ -7,7 +7,7 @@ params:
     value: FALSE
 output:
   pagedown::html_resume:
-    css: ['dd_cv.css', 'resume']
+    css: ['resume', 'dd_cv.css']
     self_contained: true
 ---
 ``` {css, echo=FALSE}
